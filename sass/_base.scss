@@ -1,0 +1,22 @@
+$primary-color: #009c41;
+$secondary-color: #ff7728;
+
+body {
+  background-image: url(../images/background.png);
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+  margin: 0px;
+}
+
+.container {
+  min-height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include for-size(mobile) {
+    max-width: 330px;
+  }
+  @include for-size(desktop) {
+    max-width: 1076px;
+  }
+}

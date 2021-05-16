@@ -1,3 +1,4 @@
-body {
-  background-color: tomato;
-}
+@import "./mixin.scss";
+@import "./base";
+@import "./header";
+@import "./mainBlock";
