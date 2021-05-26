@@ -1,0 +1,38 @@
+.article {
+  background: $third-color;
+  border-radius: 30px;
+
+  @include for-size(mobile) {
+    // width: 329px;
+    height: 383px;
+
+    // background: $third-color;
+    // border-radius: 30px;
+
+    margin-top: 26px;
+  }
+  @include for-size(desktop) {
+    //   width: 1076px;
+    height: 45px;
+  }
+}
+
+.buttonArticles {
+  background: #009c41;
+  border: none;
+  padding: 0px;
+
+  @include for-size(mobile) {
+    width: 40px;
+    height: 40px;
+    // margin-right: 17px;
+    border-radius: 50%;
+  }
+
+  @include for-size(desktop) {
+    // height: 58px;
+    // width: 284px;
+    // margin-right: 31px;
+    // border-radius: 35px;
+  }
+}

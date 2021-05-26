@@ -1,5 +1,6 @@
 $primary-color: #009c41;
 $secondary-color: #ff7728;
+$third-color: #fff;
 
 body {
   background-image: url(../images/background.png);
@@ -15,8 +16,12 @@ body {
 
   @include for-size(mobile) {
     max-width: 330px;
+
+    margin-top: 27px;
   }
   @include for-size(desktop) {
     max-width: 1076px;
+
+    margin-top: 18px;
   }
 }

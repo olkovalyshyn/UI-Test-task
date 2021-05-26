@@ -1,0 +1,166 @@
+// .main-button {
+//   border-radius: 35px;
+// }
+
+.flex-position {
+  display: flex;
+  align-items: center;
+}
+
+.psevdoLine::before {
+  @include for-size(mobile) {
+  }
+
+  @include for-size(desktop) {
+    display: flex;
+    content: "";
+    max-width: 1076px;
+    border: 2.5px solid $third-color;
+    background-color: $third-color;
+    border-radius: 2px;
+    margin-bottom: 40px;
+  }
+}
+
+.psevdoLine::after {
+  @include for-size(mobile) {
+    display: flex;
+    content: "";
+    max-width: 329px;
+    border: 1.5px solid $third-color;
+    background-color: $third-color;
+    border-radius: 2px;
+    margin-top: 26px;
+  }
+
+  @include for-size(desktop) {
+  }
+}
+
+.firstFrame {
+  border-radius: 35px;
+  background-color: $third-color;
+  text-align: center;
+
+  @include for-size(mobile) {
+    width: 165px;
+    height: 40px;
+    line-height: 40px;
+  }
+
+  @include for-size(desktop) {
+    width: 485px;
+    height: 58px;
+    line-height: 58px;
+  }
+}
+
+.secondaryFrame {
+  border-radius: 35px;
+  background-color: $secondary-color;
+  text-align: center;
+
+  @include for-size(mobile) {
+    width: 165px;
+    height: 40px;
+    line-height: 40px;
+  }
+
+  @include for-size(desktop) {
+    width: 485px;
+    height: 58px;
+    line-height: 58px;
+  }
+}
+
+.svgUserDesctop {
+  @include for-size(mobile) {
+    display: none;
+  }
+}
+
+::-webkit-input-placeholder {
+  text-align: right;
+}
+:-moz-placeholder {
+  text-align: right;
+}
+::-moz-placeholder {
+  text-align: right;
+}
+:-ms-input-placeholder {
+  text-align: right;
+}
+
+.buttonAdd {
+  background: #009c41;
+  border: none;
+  padding: 0px;
+
+  @include for-size(mobile) {
+    width: 40px;
+    height: 40px;
+    margin-right: 17px;
+    border-radius: 50%;
+  }
+
+  @include for-size(desktop) {
+    height: 58px;
+    width: 284px;
+    margin-right: 31px;
+    border-radius: 35px;
+  }
+}
+
+.buttonAdd .btnTextDesktop {
+  @include for-size(mobile) {
+    display: none;
+  }
+
+  @include for-size(desktop) {
+  }
+}
+
+.buttonAdd .btnTextMobile {
+  @include for-size(mobile) {
+    background-image: url("../images/plus.svg");
+  }
+
+  @include for-size(desktop) {
+    display: none;
+  }
+}
+
+.search {
+  background-image: url("../images/search.svg");
+  background-repeat: no-repeat;
+
+  border: none;
+  border-radius: 35px;
+  width: 100%;
+  @include for-size(mobile) {
+    // width: 19px;
+    height: 40px;
+    background-position: left 13px center;
+    background-size: 19px 19px;
+    padding-right: 19px;
+  }
+
+  @include for-size(desktop) {
+    // width: 22px;
+    height: 58px;
+    background-position: left 20px center;
+    background-size: 22px 22px;
+    padding-right: 25px;
+  }
+}
+
+.search:focus {
+  background-image: none;
+}
+
+.indent {
+  @include for-size(mobile) {
+    margin-bottom: 26px;
+  }
+}

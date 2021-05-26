@@ -14,12 +14,14 @@ body {
 @media screen and (max-width: 376px) {
   .container {
     max-width: 330px;
+    margin-top: 27px;
   }
 }
 
 @media screen and (min-width: 377px) {
   .container {
     max-width: 1076px;
+    margin-top: 18px;
   }
 }
 
@@ -140,41 +142,76 @@ header {
   }
 }
 
-.main-button {
-  border-radius: 35px;
+.flex-position {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.dobleFrame {
-  border-radius: 35px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #fff;
+@media screen and (min-width: 377px) {
+  .psevdoLine::before {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    content: "";
+    max-width: 1076px;
+    border: 2.5px solid #fff;
+    background-color: #fff;
+    border-radius: 2px;
+    margin-bottom: 40px;
+  }
 }
 
 @media screen and (max-width: 376px) {
-  .dobleFrame {
-    width: 330px;
+  .psevdoLine::after {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    content: "";
+    max-width: 329px;
+    border: 1.5px solid #fff;
+    background-color: #fff;
+    border-radius: 2px;
+    margin-top: 26px;
+  }
+}
+
+.firstFrame {
+  border-radius: 35px;
+  background-color: #fff;
+  text-align: center;
+}
+
+@media screen and (max-width: 376px) {
+  .firstFrame {
+    width: 165px;
     height: 40px;
+    line-height: 40px;
   }
 }
 
 @media screen and (min-width: 377px) {
-  .dobleFrame {
-    width: 970px;
+  .firstFrame {
+    width: 485px;
     height: 58px;
+    line-height: 58px;
   }
 }
 
 .secondaryFrame {
-  background-color: #ff7728;
   border-radius: 35px;
-  float: right;
+  background-color: #ff7728;
+  text-align: center;
 }
 
 @media screen and (max-width: 376px) {
   .secondaryFrame {
     width: 165px;
     height: 40px;
+    line-height: 40px;
   }
 }
 
@@ -182,6 +219,139 @@ header {
   .secondaryFrame {
     width: 485px;
     height: 58px;
+    line-height: 58px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .svgUserDesctop {
+    display: none;
+  }
+}
+
+::-webkit-input-placeholder {
+  text-align: right;
+}
+
+:-moz-placeholder {
+  text-align: right;
+}
+
+::-moz-placeholder {
+  text-align: right;
+}
+
+:-ms-input-placeholder {
+  text-align: right;
+}
+
+.buttonAdd {
+  background: #009c41;
+  border: none;
+  padding: 0px;
+}
+
+@media screen and (max-width: 376px) {
+  .buttonAdd {
+    width: 40px;
+    height: 40px;
+    margin-right: 17px;
+    border-radius: 50%;
+  }
+}
+
+@media screen and (min-width: 377px) {
+  .buttonAdd {
+    height: 58px;
+    width: 284px;
+    margin-right: 31px;
+    border-radius: 35px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .buttonAdd .btnTextDesktop {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .buttonAdd .btnTextMobile {
+    background-image: url("../images/plus.svg");
+  }
+}
+
+@media screen and (min-width: 377px) {
+  .buttonAdd .btnTextMobile {
+    display: none;
+  }
+}
+
+.search {
+  background-image: url("../images/search.svg");
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: 35px;
+  width: 100%;
+}
+
+@media screen and (max-width: 376px) {
+  .search {
+    height: 40px;
+    background-position: left 13px center;
+    background-size: 19px 19px;
+    padding-right: 19px;
+  }
+}
+
+@media screen and (min-width: 377px) {
+  .search {
+    height: 58px;
+    background-position: left 20px center;
+    background-size: 22px 22px;
+    padding-right: 25px;
+  }
+}
+
+.search:focus {
+  background-image: none;
+}
+
+@media screen and (max-width: 376px) {
+  .indent {
+    margin-bottom: 26px;
+  }
+}
+
+.article {
+  background: #fff;
+  border-radius: 30px;
+}
+
+@media screen and (max-width: 376px) {
+  .article {
+    height: 383px;
+    margin-top: 26px;
+  }
+}
+
+@media screen and (min-width: 377px) {
+  .article {
+    height: 45px;
+  }
+}
+
+.buttonArticles {
+  background: #009c41;
+  border: none;
+  padding: 0px;
+}
+
+@media screen and (max-width: 376px) {
+  .buttonArticles {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
   }
 }
 /*# sourceMappingURL=main.css.map */
