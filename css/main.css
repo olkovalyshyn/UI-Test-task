@@ -166,7 +166,7 @@ header {
 }
 
 @media screen and (max-width: 376px) {
-  .psevdoLine::after {
+  .psevdoLineMainTop::after {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -338,6 +338,7 @@ header {
 @media screen and (min-width: 377px) {
   .article {
     height: 45px;
+    margin-top: 10px;
   }
 }
 
@@ -353,5 +354,101 @@ header {
     height: 40px;
     border-radius: 50%;
   }
+}
+
+@media screen and (max-width: 376px) {
+  .imgArticleMail {
+    width: 30px;
+    height: 17px;
+  }
+}
+
+@media screen and (min-width: 377px) {
+  .imgArticleMail {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .imgArticlePensil {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media screen and (min-width: 377px) {
+  .imgArticlePensil {
+    display: none;
+  }
+}
+
+.flexArticleImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 14px;
+  margin-right: 20px;
+  margin-top: 15px;
+}
+
+.imgMailMargin {
+  margin-right: 15px;
+}
+
+.buttonArticles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 376px) {
+  .imgArticleCar {
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 377px) {
+  .imgArticleCar {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .psevdoLineArticle::after {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    content: "";
+    max-width: 310px;
+    border: 1px solid #1d4076;
+    border-radius: 2px;
+    -webkit-transform: matrix(1, 0, 0, -1, 0, 0);
+            transform: matrix(1, 0, 0, -1, 0, 0);
+    margin-top: 13px;
+  }
+}
+
+@media screen and (min-width: 377px) {
+  .text {
+    display: none;
+  }
+}
+
+.imgBtnMailPenArticle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=main.css.map */

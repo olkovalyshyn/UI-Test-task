@@ -3,17 +3,12 @@
   border-radius: 30px;
 
   @include for-size(mobile) {
-    // width: 329px;
     height: 383px;
-
-    // background: $third-color;
-    // border-radius: 30px;
-
     margin-top: 26px;
   }
   @include for-size(desktop) {
-    //   width: 1076px;
     height: 45px;
+    margin-top: 10px;
   }
 }
 
@@ -25,14 +20,86 @@
   @include for-size(mobile) {
     width: 40px;
     height: 40px;
-    // margin-right: 17px;
     border-radius: 50%;
   }
 
   @include for-size(desktop) {
-    // height: 58px;
-    // width: 284px;
-    // margin-right: 31px;
-    // border-radius: 35px;
   }
+}
+
+.imgArticleMail {
+  @include for-size(mobile) {
+    width: 30px;
+    height: 17px;
+  }
+
+  @include for-size(desktop) {
+    display: none;
+  }
+}
+
+.imgArticlePensil {
+  @include for-size(mobile) {
+    width: 18px;
+    height: 18px;
+  }
+
+  @include for-size(desktop) {
+    display: none;
+  }
+}
+
+.flexArticleImg {
+  display: flex;
+
+  justify-content: left;
+  align-items: center;
+  margin-left: 14px;
+  margin-right: 20px;
+  margin-top: 15px;
+}
+
+.imgMailMargin {
+  margin-right: 15px;
+}
+
+.buttonArticles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgArticleCar {
+  @include for-size(mobile) {
+    margin-left: auto;
+  }
+
+  @include for-size(desktop) {
+    display: none;
+  }
+}
+
+.psevdoLineArticle::after {
+  @include for-size(mobile) {
+    display: flex;
+    content: "";
+    max-width: 310px;
+    border: 1px solid #1d4076;
+    border-radius: 2px;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+    margin-top: 13px;
+  }
+}
+
+.text {
+  @include for-size(mobile) {
+  }
+
+  @include for-size(desktop) {
+    display: none;
+  }
+}
+
+.imgBtnMailPenArticle {
+  display: flex;
 }
